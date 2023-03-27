@@ -6,7 +6,7 @@ import {
   RouterProvider,
 } from "react-router-dom";
 
-import Landing from "./scenes/landing";
+import Landing from "./components/landing/scenes/landing";
 
 function AppRouter() {
 
