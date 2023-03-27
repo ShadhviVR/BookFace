@@ -6,6 +6,7 @@ import {
   RouterProvider,
 } from "react-router-dom";
 
+import Landing from "./scenes/landing";
 
 function AppRouter() {
 
@@ -13,7 +14,7 @@ function AppRouter() {
     createRoutesFromElements(
       <>
 
-   
+<Route path="/" element={<Landing />} />
       </>
     )
   );
