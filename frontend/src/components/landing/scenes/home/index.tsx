@@ -1,8 +1,8 @@
 import useMediaQuery from "../../hooks/useMediaQuery";
 import { SelectedPage } from "../../shared/types";
 import ActionButton from "../../shared/ActionButton";
-import Logo from "../../assets/logo.png";
-import One from "../../assets/1.png";
+import Logo from "../../../../assets/logo.png";
+import One from "../../../../assets/1.png";
 import { motion } from "framer-motion";
 import {
   MagnifyingGlassIcon,

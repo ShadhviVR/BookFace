@@ -1,9 +1,9 @@
 import { BenefitType, SelectedPage } from "../../shared/types";
 import { motion } from "framer-motion";
 import Benefit from "./Benefit";
-import Post from "../../assets/post.png";
-import Like from "../../assets/like.png";
-import Comments from "../../assets/comments.png";
+import Post from "../../../../assets/post.png";
+import Like from "../../../../assets/like.png";
+import Comments from "../../../../assets/comments.png";
 
 const benefits: Array<BenefitType> = [
   {
