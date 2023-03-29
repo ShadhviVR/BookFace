@@ -10,8 +10,8 @@ const ProfileCard = () => {
       <Nav />
       <div className="w-full h-20"></div>
     
-      <div className="ProfileImages relative flex flex-col items-center justify-center">
-        <img src={Profile} alt="" className="w-24 rounded-full bottom-0 -mb-12 shadow-profileShadow"/>
+      <div className="ProfileImages relative flex flex-col items-center justify-center ">
+        <img src={Profile} alt="" className="w-24 rounded-full bottom-0 -mb-12 shadow-profileShadow "/>
       </div>
 
       <div className="ProfileName flex flex-col items-center mt-12 gap-2">
