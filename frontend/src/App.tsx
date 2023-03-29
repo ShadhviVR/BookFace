@@ -7,7 +7,7 @@ import {
 } from "react-router-dom";
 
 import Landing from "./components/landing/scenes/landing";
-import Carousel from "./components/main/carousel/Carousel";
+import Main from "./components/main/mainpage";
 
 function AppRouter() {
 
@@ -15,7 +15,7 @@ function AppRouter() {
     createRoutesFromElements(
       <>
       <Route path="/" element={<Landing />} />
-      <Route path="/main" element={<Carousel />} />
+      <Route path="/main" element={<Main />} />
       </>
     )
   );

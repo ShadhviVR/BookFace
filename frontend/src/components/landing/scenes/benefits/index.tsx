@@ -55,7 +55,7 @@ const Benefits = ({ setSelectedPage }: Props) => {
             visible: { opacity: 1, x: 0 },
           }}
         >
-         <b className="text-center text-primary-200 flex text-lg">WHAT COULD MAKE YOU THINK THAT WORLD IS SMALL ?</b>
+         <b className="text-center text-primary-200 flex text-lg">TO CONNECT WITH YOUR LOVED ONES JUST KNOW ABOUT THEM THROUGH</b>
         </motion.div>
 
         {/* BENEFITS */}
