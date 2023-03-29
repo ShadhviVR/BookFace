@@ -8,6 +8,7 @@ import {
 
 import Landing from "./components/landing/scenes/landing";
 import Main from "./components/main/mainpage";
+import UserPage from "./components/user/userpage";
 
 function AppRouter() {
 
@@ -16,6 +17,7 @@ function AppRouter() {
       <>
       <Route path="/" element={<Landing />} />
       <Route path="/main" element={<Main />} />
+      <Route path="/user" element={<UserPage />} />
       </>
     )
   );
