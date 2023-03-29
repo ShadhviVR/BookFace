@@ -1,6 +1,5 @@
 import React from "react"
-import { BrowserRouter as Router, Route } from "react-router-dom"
-import NavBar from "./navbar/Navbar";
+import Nav from "../user/Nav/nav";
 import Carousel from "./carousel/Carousel";
 
 interface LayoutProps {
@@ -10,8 +9,8 @@ interface LayoutProps {
   const Layout: React.FC<LayoutProps> = ({ children }) => {
   return (
   <>
-  <div className='bg-main text-white'>
-  <NavBar />
+  <div className='bg-main text-white bg-gray-20'>
+  <Nav />
   {children}
   <Carousel/>
 

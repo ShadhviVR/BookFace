@@ -1,10 +1,15 @@
 import React from "react";
 import Profile from "../../../assets/user.png";
+import Nav from "../Nav/nav";
 
 const ProfileCard = () => {
   const ProfilePage = true;
   return (
+    
     <div className="ProfileCard rounded-xl flex flex-col relative gap-4 overflow-x-auto bg-cardColor">
+      <Nav />
+      <div className="w-full h-20"></div>
+    
       <div className="ProfileImages relative flex flex-col items-center justify-center">
         <img src={Profile} alt="" className="w-24 rounded-full bottom-0 -mb-12 shadow-profileShadow"/>
       </div>
