@@ -1,8 +1,7 @@
 import React, { useState } from "react";
 import Profile from "../../../assets/user.png";
 import Nav from "../Nav/nav";
-import { UilPen } from "@iconscout/react-unicons";
-import ProfileModal from "../ProfileModal/ProfileModal";
+import InfoCard from "../ProfileModal/InfoCard";
 
 const ProfileCard = () => {
   const ProfilePage = true;
@@ -19,6 +18,8 @@ const ProfileCard = () => {
       <div className="ProfileName flex flex-col items-center mt-12 gap-2">
         <span className="font-bold">Bossy Ben</span>
       </div>
+
+      <InfoCard />
 
       <div className="followStatus flex flex-col items-center justify-center gap-3">
         <hr className="w-5/6 border border-hrColor"/>
