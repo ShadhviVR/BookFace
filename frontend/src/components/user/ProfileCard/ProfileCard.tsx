@@ -1,6 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 import Profile from "../../../assets/user.png";
 import Nav from "../Nav/nav";
+import { UilPen } from "@iconscout/react-unicons";
+import ProfileModal from "../ProfileModal/ProfileModal";
 
 const ProfileCard = () => {
   const ProfilePage = true;
