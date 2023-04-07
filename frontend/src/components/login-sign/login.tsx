@@ -67,7 +67,7 @@ export default function Login() {
                 required
               />
 
-              <Link to="/api/auth/forgotpassword" className="text-white hover:underline">
+              <Link to="/forgetpswd" className="text-white hover:underline">
                 Forgot Password?
               </Link>
               <div className="flex justify-center items-center">
