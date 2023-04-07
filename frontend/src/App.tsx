@@ -9,7 +9,8 @@ import {
 import Landing from "./components/landing/scenes/landing";
 import Main from "./components/main/mainpage";
 import UserPage from "./components/user/userpage";
-import NavBar from "./components/user/Nav/navbar"
+import Login from "./components/login-sign/login";
+import Signup from "./components/login-sign/signup";
 
 function AppRouter() {
 
@@ -19,7 +20,8 @@ function AppRouter() {
       <Route path="/" element={<Landing />} />
       <Route path="/main" element={<Main />} />
       <Route path="/user" element={<UserPage />} />
-      <Route path="/nav" element={<NavBar />} />
+      <Route path="/login" element={<Login />} />
+      <Route path="/signup" element={<Signup />} />
       </>
     )
   );

@@ -12,7 +12,6 @@ const Nav: React.FC = () => {
       <div className="relative flex flex-col items-start justify-between">
         <img src={Logo} alt="" className="w-56 h-12 "/>
       </div>
-          <Button>Sign Out</Button>
       </div>
     </div>
   );
