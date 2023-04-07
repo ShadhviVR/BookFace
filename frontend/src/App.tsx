@@ -11,6 +11,8 @@ import Main from "./components/main/mainpage";
 import UserPage from "./components/user/userpage";
 import Login from "./components/login-sign/login";
 import Signup from "./components/login-sign/signup";
+import Forgetpswd from "./components/login-sign/forgetpswd";
+import Reset from "./components/login-sign/reset";
 
 function AppRouter() {
 
@@ -22,6 +24,8 @@ function AppRouter() {
       <Route path="/user" element={<UserPage />} />
       <Route path="/login" element={<Login />} />
       <Route path="/signup" element={<Signup />} />
+      <Route path="/forgetpswd" element={<Forgetpswd />} />
+      <Route path="/reset" element={<Reset />} />
       </>
     )
   );
