@@ -41,7 +41,7 @@ public class User {
     
     private String resetToken;
 
-    @Column(name = "profile_photo");
+    @Column(name = "profile_photo")
     private String profilePhoto; // stocke l'URL de l'image de profil.
 
 
