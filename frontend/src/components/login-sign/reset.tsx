@@ -12,7 +12,7 @@ export default function Forgot() {
      return (
         <>
         <Link to="/landing">
-          <header className="relative z-[1] w-28">
+          <header className="relative z-[1] w-56">
             <img className="h-full w-full" src={logo} alt="logo" />
           </header>
           </Link>
@@ -47,7 +47,7 @@ export default function Forgot() {
                   />
                   <div className="flex justify-center items-center">
                   <Link to="/api/auth/login">
-                  <button className="my-8 rounded-md bg-subMain p-2 font-semibold text-white outline-none">
+                  <button className="my-8 rounded-md bg-primary-200 p-2 font-semibold text-white outline-none">
                     Submit
                   </button>
                   </Link>

@@ -1,6 +1,5 @@
 import useMediaQuery from "../../hooks/useMediaQuery";
 import { SelectedPage } from "../../shared/types";
-import ActionButton from "../../shared/ActionButton";
 import Logo from "../../../../assets/logo.png";
 import One from "../../../../assets/1.png";
 import { motion } from "framer-motion";
@@ -11,6 +10,7 @@ import {
   HeartIcon,
   HashtagIcon,
 } from "@heroicons/react/24/solid";
+import { Link, useNavigate } from "react-router-dom";
 
 type Props = {
   setSelectedPage: (value: SelectedPage) => void;
@@ -76,12 +76,17 @@ const Home = ({ setSelectedPage }: Props) => {
               visible: { opacity: 1, x: 0 },
             }}
           >
-            <ActionButton setSelectedPage={setSelectedPage}>
-              Login
-            </ActionButton>
-            <ActionButton setSelectedPage={setSelectedPage}>
-              Join Now
-            </ActionButton>
+            <button className="rounded-md hover:bg-primary-200 px-10 py-2 bg-primary-500 hover:text-white">
+              <Link to="/login" className="text-black">
+                Login
+              </Link>
+            </button>
+
+            <button className="rounded-md hover:bg-primary-200 px-10 py-2 bg-primary-500 hover:text-white">
+              <Link to="/signup" className="text-black">
+                Join Now
+              </Link>
+            </button>
 
           </motion.div>
         </div>

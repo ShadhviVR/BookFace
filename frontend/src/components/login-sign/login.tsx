@@ -38,7 +38,7 @@ export default function Login() {
           className={`absolute top-0  min-h-screen w-full bg-[url("/bg.png")] bg-cover  `}
         ></section>
         <section className="absolute inset-0 bg-gradient-to-b from-zinc-900/50"></section>
-        <br/> <br/> <br/>
+        <br/> <br/> <br/> <br/>
         <form
           onSubmit={handleSubmit}
           className="relative mx-auto w-[380px] rounded-lg bg-black/75 p-16"
@@ -72,15 +72,15 @@ export default function Login() {
               </Link>
               <div className="flex justify-center items-center">
               
-              <button className="my-8 rounded-md bg-subMain p-2 font-semibold text-white outline-none">
+              <button className="my-8 rounded-md bg-primary-200 p-2 font-semibold text-white outline-none">
                 Log In
               </button>
               
               </div>
             </section>
             <p>
-              New to NetVibe?{" "}
-              <Link to="/api/auth/register" className="text-white hover:underline">
+              New to FlipFlop?{" "}
+              <Link to="/signup" className="text-white hover:underline">
                 Sign Up
               </Link>
             </p>

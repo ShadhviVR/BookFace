@@ -16,7 +16,7 @@ export default function Email() {
           email,
         });
         console.log(response.data);
-        navigate("/api/auth/login");
+        navigate("/login");
       } catch (error) {
         console.error(error);
         alert("Email does not exist.");
@@ -55,7 +55,7 @@ export default function Email() {
                   />
                   <div className="flex justify-center items-center">
                   
-                    <button className="my-8 rounded-md bg-subMain p-2 font-semibold text-white outline-none">
+                    <button className="my-8 rounded-md bg-primary-200 p-2 font-semibold text-white outline-none">
                         Submit
                     </button>
                  
