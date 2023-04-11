@@ -87,15 +87,9 @@ export default function Registration() {
                 value={passwordconf}
                 onChange={(event) => setPasswordConfirmation(event.target.value)}
               />
-              <p>
-           I accept to the{" "}
-              <Link to="/privacy" className="text-blue-500 hover:underline">
-                Privacy Policy
-              </Link>
-            </p>
               <div className="flex justify-center items-center">
               
-              <button className="my-8 rounded-md bg-subMain p-2 font-semibold text-white outline-none">
+              <button className="my-8 rounded-md bg-primary-200 p-2 font-semibold text-white outline-none">
                 Sign Up
               </button>
               
@@ -103,7 +97,7 @@ export default function Registration() {
             </section>
             <p>
               Already have an account?{" "}
-              <Link to="/api/auth/login" className="text-white hover:underline">
+              <Link to="/login" className="text-white hover:underline">
                 Log In
               </Link>
             </p>
