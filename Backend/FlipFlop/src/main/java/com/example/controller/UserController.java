@@ -21,7 +21,14 @@ public class UserController {
 
     @PostMapping("/")
     public User createUser(@RequestBody User user) {
+        if (!isPasswordConfirmed(user.getPassword(), user.getConfirmPassword())) {
+            throw new RuntimeException("Password and confirm password do not match");
+        }
         return userService.save(user);
+    }
+
+    private boolean isPasswordConfirmed(String password, String confirmPassword) {
+        return password.equals(confirmPassword);
     }
 
     @GetMapping("/{id}")
