@@ -12,7 +12,7 @@ export default function Email() {
      const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
       event.preventDefault();
       try {
-        const response = await axios.post("http://localhost:3000/api/auth/forgotpassword", {
+        const response = await axios.post("http://localhost:8080/api/forgotpassword", {
           email,
         });
         console.log(response.data);

@@ -13,7 +13,7 @@ export default function Registration() {
   const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     try {
-      const response = await axios.post("http://localhost:3000/api/auth/register", {
+      const response = await axios.post("http://localhost:8080/api/signup", {
         username,
         email,
         password,
