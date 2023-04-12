@@ -20,7 +20,7 @@ public class UserServiceImpl implements UserService {
     @Override
     public User save(User user) {
         return userRepository.save(user);
-    }
+    }// la méthode isPasswordConfirme est appelé ici
 
     @Override
     public User findById(Long id) {
