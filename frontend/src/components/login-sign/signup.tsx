@@ -20,7 +20,7 @@ export default function Registration() {
         passwordconf,
       });
       console.log(response.data);
-      navigate("/api/auth/login");
+      navigate("/login");
     } catch (error) {
       console.error(error);
       alert("Registration failed! Please check your email and password and try again.");

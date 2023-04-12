@@ -18,7 +18,7 @@ export default function Login() {
 
       // if the request succeeds, store the JWT token in localStorage and navigate to the landing page
       localStorage.setItem("token", response.data.token);
-      navigate("/combine");
+      navigate("/main");
     } catch (error) {
       // if the request fails, log the error to the console and display an error message to the user
       console.error(error);
