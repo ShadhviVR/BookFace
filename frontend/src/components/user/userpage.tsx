@@ -1,4 +1,5 @@
 import Profile from "./Profile/Profile";
+import Test from "./allpost/test"
 function App() {
   return (
     <div className="App bg-gray-20">
@@ -7,6 +8,10 @@ function App() {
         {/* <Home/> */}
         <Profile/>
         {/* <Auth/> */}
+        <br/>
+        <div className="bg-gray-20">
+        <Test/>
+        </div>
     </div>
   );
 }

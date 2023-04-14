@@ -12,7 +12,7 @@ const ProfileCard = () => {
       <div className="w-full h-20"></div>
     
       <div className="ProfileImages relative flex flex-col items-center justify-center ">
-        <img src={Profile} alt="" className="w-24 rounded-full bottom-0 -mb-12 shadow-profileShadow "/>
+        <img src={Profile} alt="" className="w-24 h-24 rounded-full bottom-0 -mb-12 shadow-profileShadow bg-slate-500 "/>
       </div>
 
       <div className="ProfileName flex flex-col items-center mt-12 gap-2">
@@ -37,7 +37,7 @@ const ProfileCard = () => {
             <>
               <div className="vl h-24 border-l border-hrColor"></div>
               <div className="follow flex flex-col items-center justify-center">
-                <span className="font-bold">9</span>
+                <span className="font-bold">6</span>
                 <span className="text-gray text-xs">Posts</span>
               </div>
             </>
