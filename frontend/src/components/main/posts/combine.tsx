@@ -68,11 +68,7 @@ function Feed() {
 
         {hasFilteredPosts ? (
           <div className={isSidebarOpen ? "lg:ml-[451.25px]" : "lg:mx-60"}>
-            <MessageInput
-              onSubmit={(message) => {
-                console.log(message);
-              }}
-            />
+            
             {matchingAllFilters.map((post) => (
               <Post
                 id={post.id}

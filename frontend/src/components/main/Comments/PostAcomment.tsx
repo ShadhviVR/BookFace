@@ -54,7 +54,7 @@ function PostAcomment(props: Props) {
         alt="Your profile picture"
       />
       <input
-        className="bg-whitish w-[70%] rounded-full  p-1 px-2 border shadow-md  sm:w-full sm:flex-1 sm:mx-4 focus:ring-pink focus:ring-2 focus:border-pink focus:outline-none focus:ring-offset-pink dark:bg-dark dark:text-whitish"
+        className="w-[70%] rounded-full  p-1 px-2 border shadow-md  sm:w-full sm:flex-1 sm:mx-4 focus:outline-none"
         placeholder={t("What's on your mind?") as string}
         type="text"
         onChange={handleComment}
@@ -63,7 +63,7 @@ function PostAcomment(props: Props) {
       <RoundButton
         svg={<img src={send} alt="send" className="w-1/2 translate-x-[-2px]" />}
         clickHandler={postComment}
-        classname="bg-blue"
+        classname="bg-primary-200"
         color=""
         type="submit"
       />
