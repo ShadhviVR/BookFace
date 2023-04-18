@@ -25,14 +25,7 @@ const MessageInput: React.FC<Props> = ({ onSubmit }) => {
   return (
     <>
       <div className="m-4 sm:mx-20 relative">
-        <input
-          type="text"
-          placeholder={t("What's on your mind?") as string}
-          onClick={() => setIsOpen(true)}
-          value={message}
-          onChange={(e) => setMessage(e.target.value)}
-          className="w-full px-4 py-2 lg:mt-10 text-dark dark:text-whitish bg-whitish dark:bg-dark border shadow-md  shadow-blue/70 rounded-full focus:outline-none focus:border-blue-500"
-        />
+        
         <Transition show={isOpen} as={React.Fragment}>
           <Dialog
             as="div"

@@ -25,7 +25,7 @@ const PostShare: React.FC = () => {
         <input type="text" placeholder="What's happening" className="bg-inputColor rounded-lg p-3 text-lg text-purple-500 focus:outline-none" />
         <div className="postOptions flex justify-around">
           <div
-            className="option flex items-center justify-center text-sm rounded-lg text-primary-500"
+            className="option flex items-center justify-center text-sm rounded-lg text-primary-500 cursor-pointer"
             onClick={() => imageRef.current?.click()}
           >
             <UilScenery />
