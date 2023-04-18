@@ -73,12 +73,10 @@ const MessageInput: React.FC<Props> = ({ onSubmit }) => {
                     as="h3"
                     className="text-lg font-medium leading-6 text-dark dark:text-whitish mb-2"
                   >
-                    {t("What's on your mind?")}
                   </Dialog.Title>
 
                   <div className="mt-2">
                     <textarea
-                      placeholder={t("postWhat's on your mind?") as string}
                       value={message}
                       onChange={(e) => setMessage(e.target.value)}
                       className="w-full p-2 text-dark dark:text-whitish bg-whitish dark:bg-dark border-2 border-grey rounded-md focus:outline-none focus:border-teal"

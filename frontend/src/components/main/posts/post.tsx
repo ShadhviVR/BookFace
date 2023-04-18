@@ -5,7 +5,6 @@ interface postProps {
   id: number;
   name: string;
   picture: string;
-  post: string;
   image: string;
   hashtag: string[];
   commentsProps: commentsProps[];
@@ -22,23 +21,20 @@ interface postAcommentProps {
 }
 function Post(props: postProps) {
   return (
-    <section className=" drop-shadow-md mt-8 mx-8 sm:mt-12 sm:mx-12 rounded-lg bg-whitish dark:bg-darkless">
+    <section className=" drop-shadow-md mt-8 mx-8 sm:mt-12 sm:mx-12 rounded-lg bg-slate-50">
       <div className="flex items-center">
         <img
           src={props.picture}
           className="w-12 h-12 rounded-full m-4 object-cover"
           alt="profile picture"
         />
-        <div className="dark:text-whitish">
-          <h3 className="font-title font-bold">{props.name}</h3>
-          <h4>
-            {props.post} 
-          </h4>
+        <div className="dark:text-black">
+          <h3 className="font-title font-bold text-primary-200">{props.name}</h3>
         </div>
       </div>
-      <div className="p-4 after:block after:mx-auto after:my-0 after:h-1 after:pt-6 after:w-[90%] after:content-[''] after:border-b after:border-b-gray-400 dark:text-whitish">
+      <div className="p-4 after:block after:mx-auto after:my-0 after:h-1 after:pt-6 after:w-[90%] after:content-[''] after:border-b after:border-b-gray-400 ">
         <img src={props.image}/>
-        <p className="pt-4">{props.hashtag.map((item) => item + " ")}</p>
+        <p className="pt-4 text-primary-500">{props.hashtag.map((item) => item + " ")}</p>
       </div>
       {props.commentsProps.map((comment) => (
         <Comments
