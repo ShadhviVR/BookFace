@@ -5,7 +5,7 @@ import { Filters } from "./Filters";
 import MessageInput from "./MessageInput";
 import profile from "../../../assets/user.png";
 
-function Feed() {
+function Combine() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
   const toggleSideBar = () => {
     setIsSidebarOpen(!isSidebarOpen);
@@ -80,6 +80,7 @@ function Feed() {
                 commentsProps={post.comments}
                 postAcommentProps={profile}
               />
+            
             ))}
           </div>
         ) : matchingSomeFilters.length === 0 ? (
@@ -128,4 +129,4 @@ function Feed() {
     </>
   );
 }
-export default Feed;
+export default Combine;
