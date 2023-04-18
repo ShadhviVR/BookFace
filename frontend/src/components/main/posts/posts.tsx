@@ -5,18 +5,18 @@ const posts = {
       picture: "src/assets/pro1.jpg",
       image:
         "src/assets/posts/post1.jpg",
-      hashtag: ["#study", "#activePedagogy"],
+      hashtag: ["#nature", "#winter"],
       comments: [
         {
           commentName: "Dalton",
           commentPicture: "src/assets/pro11.jpg",
-          commentText: "Félicitations Jane!",
+          commentText: "Amazing!",
           commentID: 1,
         },
         {
           commentName: "Flynn",
           commentPicture: "src/assets/pro10.jpg",
-          commentText: "Bonne chance pour cette nouvelle aventure!",
+          commentText: "What a beautiful place!",
           commentID: 2,
         },
       ],
@@ -27,18 +27,18 @@ const posts = {
         picture: "src/assets/pro2.jpg",
         image:
           "src/assets/posts/post2.jpg",
-        hashtag: ["#study", "#activePedagogy"],
+        hashtag: ["#winter", "#snow", "#sledge"],
         comments: [
           {
             commentName: "Pearl",
             commentPicture: "src/assets/pro1.jpg",
-            commentText: "Félicitations Jane!",
+            commentText: "Time to sledge!",
             commentID: 1,
           },
           {
             commentName: "Clay",
             commentPicture: "src/assets/pro10.jpg",
-            commentText: "Bonne chance pour cette nouvelle aventure!",
+            commentText: "Andy looks beautiful!",
             commentID: 2,
           },
         ],
@@ -49,18 +49,18 @@ const posts = {
         picture: "src/assets/pro3.jpg",
         image:
           "src/assets/posts/post3.png",
-        hashtag: ["#study", "#activePedagogy"],
+        hashtag: ["#christmas", "#christmastree"],
         comments: [
           {
             commentName: "Bryce",
             commentPicture: "src/assets/pro9.jpg",
-            commentText: "Félicitations Jane!",
+            commentText: "Nice decoration!",
             commentID: 1,
           },
           {
             commentName: "Jesicca",
             commentPicture: "src/assets/pro10.jpg",
-            commentText: "Bonne chance pour cette nouvelle aventure!",
+            commentText: "Just wow!",
             commentID: 2,
           },
         ],
