@@ -3,7 +3,6 @@ const posts = {
       id: 1,
       name: "Drake",
       picture: "src/assets/pro1.jpg",
-      post: "Etudiante chez BeCode",
       image:
         "src/assets/posts/post1.jpg",
       hashtag: ["#study", "#activePedagogy"],
@@ -26,7 +25,6 @@ const posts = {
         id: 2,
         name: "Vienna",
         picture: "src/assets/pro2.jpg",
-        post: "Etudiante chez BeCode",
         image:
           "src/assets/posts/post2.jpg",
         hashtag: ["#study", "#activePedagogy"],
@@ -49,7 +47,6 @@ const posts = {
         id: 3,
         name: "Jenson",
         picture: "src/assets/pro3.jpg",
-        post: "Etudiante chez BeCode",
         image:
           "src/assets/posts/post3.png",
         hashtag: ["#study", "#activePedagogy"],
@@ -72,7 +69,6 @@ const posts = {
         id: 4,
         name: "Hanna",
         picture: "src/assets/pro4.jpg",
-        post: "Etudiante chez BeCode",
         image:
           "src/assets/posts/post4.jpg",
         hashtag: ["#study", "#activePedagogy"],
@@ -95,7 +91,6 @@ const posts = {
         id: 5,
         name: "Marcus",
         picture: "src/assets/pro5.jpg",
-        post: "Etudiante chez BeCode",
         image:
           "src/assets/posts/post5.jpg",
         hashtag: ["#study", "#activePedagogy"],
@@ -118,7 +113,6 @@ const posts = {
         id: 6,
         name: "Zoya",
         picture: "src/assets/pro6.jpg",
-        post: "Etudiante chez BeCode",
         image:
           "src/assets/posts/post6.jpg",
         hashtag: ["#study", "#activePedagogy"],
@@ -141,7 +135,6 @@ const posts = {
         id: 7,
         name: "Denver",
         picture: "src/assets/pro7.jpg",
-        post: "Etudiante chez BeCode",
         image:
           "src/assets/posts/post7.jpg",
         hashtag: ["#study", "#activePedagogy"],
@@ -164,7 +157,6 @@ const posts = {
         id: 8,
         name: "Olivia",
         picture: "src/assets/pro8.jpg",
-        post: "Etudiante chez BeCode",
         image:
           "src/assets/posts/post8.jpg",
         hashtag: ["#study", "#activePedagogy"],
@@ -187,7 +179,6 @@ const posts = {
         id: 9,
         name: "Yusuf",
         picture: "src/assets/pro9.jpg",
-        post: "Etudiante chez BeCode",
         image:
           "src/assets/posts/post9.jpg",
         hashtag: ["#study", "#activePedagogy"],
@@ -210,7 +201,6 @@ const posts = {
         id: 10,
         name: "Iva",
         picture: "src/assets/pro10.jpg",
-        post: "Etudiante chez BeCode",
         image:
           "src/assets/posts/post10.jpg",
         hashtag: ["#study", "#activePedagogy"],
@@ -233,7 +223,6 @@ const posts = {
         id: 11,
         name: "Albert",
         picture: "src/assets/pro11.jpg",
-        post: "Etudiante chez BeCode",
         image:
           "src/assets/posts/post11.jpg",
         hashtag: ["#study", "#activePedagogy"],
@@ -256,7 +245,6 @@ const posts = {
         id: 12,
         name: "Amelie",
         picture: "src/assets/pro12.jpg",
-        post: "Etudiante chez BeCode",
         image:
           "src/assets/posts/post12.jpg",
         hashtag: ["#study", "#activePedagogy"],
