@@ -71,18 +71,18 @@ const posts = {
         picture: "src/assets/pro4.jpg",
         image:
           "src/assets/posts/post4.jpg",
-        hashtag: ["#study", "#activePedagogy"],
+        hashtag: ["#summer", "#beach"],
         comments: [
           {
             commentName: "Alex",
             commentPicture: "src/assets/pro8.jpg",
-            commentText: "Félicitations Jane!",
+            commentText: "Nice!",
             commentID: 1,
           },
           {
             commentName: "Monty",
             commentPicture: "src/assets/pro7.jpg",
-            commentText: "Bonne chance pour cette nouvelle aventure!",
+            commentText: "Holiday!",
             commentID: 2,
           },
         ],
@@ -93,18 +93,18 @@ const posts = {
         picture: "src/assets/pro5.jpg",
         image:
           "src/assets/posts/post5.jpg",
-        hashtag: ["#study", "#activePedagogy"],
+        hashtag: ["#spring", "#leaves"],
         comments: [
           {
             commentName: "Louise",
             commentPicture: "src/assets/pro1.jpg",
-            commentText: "Félicitations Jane!",
+            commentText: "Spring Time!",
             commentID: 1,
           },
           {
             commentName: "Nate",
             commentPicture: "src/assets/pro2.jpg",
-            commentText: "Bonne chance pour cette nouvelle aventure!",
+            commentText: "Nature!",
             commentID: 2,
           },
         ],
@@ -115,18 +115,18 @@ const posts = {
         picture: "src/assets/pro6.jpg",
         image:
           "src/assets/posts/post6.jpg",
-        hashtag: ["#study", "#activePedagogy"],
+        hashtag: ["#northernlights"],
         comments: [
           {
             commentName: "Eric",
             commentPicture: "src/assets/pro3.jpg",
-            commentText: "Félicitations Jane!",
+            commentText: "Wow!",
             commentID: 1,
           },
           {
             commentName: "Chirstina",
             commentPicture: "src/assets/pro4.jpg",
-            commentText: "Bonne chance pour cette nouvelle aventure!",
+            commentText: "The color though!",
             commentID: 2,
           },
         ],
@@ -137,18 +137,18 @@ const posts = {
         picture: "src/assets/pro7.jpg",
         image:
           "src/assets/posts/post7.jpg",
-        hashtag: ["#study", "#activePedagogy"],
+        hashtag: ["#amsterdam", "#boat"],
         comments: [
           {
             commentName: "Tabitha",
             commentPicture: "src/assets/pro1.jpg",
-            commentText: "Félicitations Jane!",
+            commentText: "Enjoy!",
             commentID: 1,
           },
           {
             commentName: "Winnie",
             commentPicture: "src/assets/pro5.jpg",
-            commentText: "Bonne chance pour cette nouvelle aventure!",
+            commentText: "Nice shot!",
             commentID: 2,
           },
         ],
