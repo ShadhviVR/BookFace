@@ -6,7 +6,7 @@ interface Props {
   disabled: boolean;
   hide: boolean;
   color: string;
-  svg: JSX.Element; // nouveau prop pour le SVG
+  svg: JSX.Element; 
   classname: string;
 }
 

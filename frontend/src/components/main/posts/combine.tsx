@@ -79,7 +79,6 @@ function Feed() {
                 key={post.id}
                 name={post.name}
                 picture={post.picture}
-                post={post.post}
                 image={post.image}
                 hashtag={post.hashtag}
                 commentsProps={post.comments}
@@ -100,7 +99,6 @@ function Feed() {
                 key={post.id}
                 name={post.name}
                 picture={post.picture}
-                post={post.post}
                 image={post.image}
                 hashtag={post.hashtag}
                 commentsProps={post.comments}
@@ -122,7 +120,6 @@ function Feed() {
                 key={post.id}
                 name={post.name}
                 picture={post.picture}
-                post={post.post}
                 image={post.image}
                 hashtag={post.hashtag}
                 commentsProps={post.comments}
