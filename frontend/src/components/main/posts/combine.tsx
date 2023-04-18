@@ -77,8 +77,8 @@ function Combine() {
                 picture={post.picture}
                 image={post.image}
                 hashtag={post.hashtag}
-                commentsProps={post.comments}
                 postAcommentProps={profile}
+                commentsProps={post.comments}
               />
             
             ))}
@@ -98,8 +98,8 @@ function Combine() {
                 picture={post.picture}
                 image={post.image}
                 hashtag={post.hashtag}
-                commentsProps={post.comments}
                 postAcommentProps={profile}
+                commentsProps={post.comments}
               />
             ))}
 
@@ -119,8 +119,8 @@ function Combine() {
                 picture={post.picture}
                 image={post.image}
                 hashtag={post.hashtag}
-                commentsProps={post.comments}
                 postAcommentProps={profile}
+                commentsProps={post.comments}
               />
             ))}
           </div>
