@@ -14,11 +14,11 @@ export default function Login() {
 
     try {
       // send a POST request to the backend's login endpoint with the email and password fields
-      const response = await axios.post("http://localhost:3000/api/auth/login", { email, password });
+      const response = await axios.post("http://localhost:8080/api/login", { email, password });
 
       // if the request succeeds, store the JWT token in localStorage and navigate to the landing page
-      localStorage.setItem("token", response.data.token);
-      navigate("/combine");
+      localStorage.setItem("token", response.data);
+      navigate("/main");
     } catch (error) {
       // if the request fails, log the error to the console and display an error message to the user
       console.error(error);

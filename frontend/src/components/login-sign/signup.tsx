@@ -3,7 +3,8 @@ import axios from "axios";
 import { Link, useNavigate } from "react-router-dom";
 import logo from "../../assets/logo.png";
 
-export default function Registration() {
+export default function Registration() { 
+
   const navigate = useNavigate();
   const [username, setName] = useState("");
   const [email, setEmail] = useState("");
@@ -12,20 +13,30 @@ export default function Registration() {
 
   const handleSubmit = async (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
+   
+    // Vérification des données
+    
+
     try {
-      const response = await axios.post("http://localhost:3000/api/auth/register", {
+      const response = await axios.post("http://localhost:8080/api/signup", {
         username,
         email,
         password,
         passwordconf,
       });
       console.log(response.data);
-      navigate("/api/auth/login");
-    } catch (error) {
-      console.error(error);
-      alert("Registration failed! Please check your email and password and try again.");
+      navigate("/login");
+    } catch (error:any) {
+      console.log(error);
+      if (error.response.data === "Nom") {
+        alert("Username or email already used!");
+      } else if (error.response.data === "Les mots de passe") {
+        alert("Passwords do not match!");
+      }
     }
-  }
+    console.log('handleSubmit completed');
+  };
+
 
   return (
     <>
