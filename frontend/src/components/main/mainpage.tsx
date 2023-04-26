@@ -1,6 +1,7 @@
 import React from "react"
 import Nav from "../user/Nav/nav";
-import Carousel from "./carousel/Carousel";
+import Search  from "./search/search";
+import Combine from "./posts/combine";
 
 interface LayoutProps {
   children?: React.ReactNode;
@@ -12,9 +13,11 @@ interface LayoutProps {
   <div className='bg-main text-white bg-gray-20'>
   <Nav />
   {children}
-  <Carousel/>
-
+<br/> <br/> <br/> <br/>
+  <Search/> 
+  <Combine/>
   </div>
+
   </>
   );
   };

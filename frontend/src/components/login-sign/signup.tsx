@@ -26,6 +26,7 @@ export default function Registration() {
       });
       console.log(response.data);
       navigate("/login");
+<<<<<<< HEAD
     } catch (error:any) {
       console.log(error);
       if (error.response.data === "Nom") {
@@ -33,6 +34,11 @@ export default function Registration() {
       } else if (error.response.data === "Les mots de passe") {
         alert("Passwords do not match!");
       }
+=======
+    } catch (error) {
+      console.error(error);
+      alert("Registration failed! Please check your email and password and try again.");
+>>>>>>> 6517795889b5cae06260abb2340c38cd7ef2fdea
     }
     console.log('handleSubmit completed');
   };

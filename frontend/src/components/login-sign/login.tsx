@@ -17,7 +17,11 @@ export default function Login() {
       const response = await axios.post("http://localhost:8080/api/login", { email, password });
 
       // if the request succeeds, store the JWT token in localStorage and navigate to the landing page
+<<<<<<< HEAD
       localStorage.setItem("token", response.data);
+=======
+      localStorage.setItem("token", response.data.token);
+>>>>>>> 6517795889b5cae06260abb2340c38cd7ef2fdea
       navigate("/main");
     } catch (error) {
       // if the request fails, log the error to the console and display an error message to the user
