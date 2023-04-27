@@ -24,14 +24,12 @@ public class Followers {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
-    @Column(name = "follower")
-    private String follower;
-
-    @Column(name = "followe")
-    private String followe;
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "follower_id")
+    private User follower;
 
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "user_id")
-    private User user;
+    @JoinColumn(name = "followed_id")
+    private User followed;
     
 }

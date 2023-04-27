@@ -1,9 +1,11 @@
 
 package com.example.controller;
-
+import com.example.dto.JwtConfig;
+import static com.example.dto.JwtConfig.jwtExpirationMs;
 import com.example.entity.User;
 import com.example.exception.UserNotFoundException;
 import com.example.repository.UserRepository;
+import java.util.Date;
 import java.util.List;
 import java.util.UUID;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -12,6 +14,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.mail.SimpleMailMessage;
 import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.security.crypto.password.PasswordEncoder;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -20,7 +23,10 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+import io.jsonwebtoken.Jwts;
+import io.jsonwebtoken.SignatureAlgorithm;
 
+@CrossOrigin(origins = "http://localhost:5173/")
 @RestController
 @RequestMapping("/api/")
 public class UserController {
@@ -33,7 +39,6 @@ public class UserController {
 
     @Autowired
     PasswordEncoder passwordEncoder;
-
 
     //get all users :::::::::::::::::
     @GetMapping("/users")
@@ -50,16 +55,17 @@ public class UserController {
     }
 
     //create user rest API
+    
     @PostMapping("/signup")
     public ResponseEntity<?> createClient(@RequestBody User client) {
         List<User> myList = userRep.findByUsername(client.getUsername());
         List<User> myList1 = userRep.findByMail(client.getMail());
 
         if (!myList.isEmpty() || !myList1.isEmpty()) {
-            return new ResponseEntity<>("Nom d'utilisateur ou e-mail déjà utilisé!",
+            return new ResponseEntity<>("Nom",
                     HttpStatus.BAD_REQUEST);
         } else if (!client.getPassword().equals(client.getConfirmPassword())) {
-            return new ResponseEntity<>("Les mots de passe ne correspondent pas!",
+            return new ResponseEntity<>("Les mots de passe",
                     HttpStatus.BAD_REQUEST);
         } else {
             client.setPassword(passwordEncoder.encode(client.getPassword()));
@@ -68,12 +74,39 @@ public class UserController {
         }
 
     }
+    
+/*  @PostMapping("/login")
+    public ResponseEntity<?> LoginClient(@RequestBody User client) {
 
+    List<User> myList = userRep.findByMail(client.getMail());
+
+    if (myList.isEmpty()) {
+        return ResponseEntity.ok("Nom d'utilisateur ou mot de passe incorrect !");
+    }
+
+    String storedPassword = myList.get(0).getPassword();
+    String enteredPassword = client.getPassword();
+
+    if (!passwordEncoder.matches(enteredPassword, storedPassword)) {
+        return ResponseEntity.ok("Nom d'utilisateur ou mot de passe incorrect !");
+    }
+
+    // Generate JWT token
+    String token = Jwts.builder()
+            .setSubject(myList.get(0).getMail())
+            .setIssuedAt(new Date())
+           .setExpiration(new Date(System.currentTimeMillis() + jwtExpirationMs))
+            .compact();
+
+    // Return token in response
+    return ResponseEntity.ok(new JwtResponse(token));
+}*/
     //login user api :::::::::::::
     @PostMapping("/login")
     public ResponseEntity<?> LoginClient(@RequestBody User client) {
 
-        List<User> myList = userRep.findByUsername(client.getUsername());
+      //  List<User> myList = userRep.findByUsername(client.getUsername());
+        List<User> myList= userRep.findByMail(client.getMail());
 
         if (myList.isEmpty()) {
             return ResponseEntity.ok("Nom d'utilisateur ou mot de passe incorrect !");
@@ -91,7 +124,7 @@ public class UserController {
     }
 
     // forget password API ::::::
-    @PostMapping("/reset-password")
+    @PostMapping("/forgotpassword")
     public ResponseEntity<?> resetPassword(@RequestBody User client) {
         String email = client.getMail();
         List<User> myList = userRep.findByMail(email);
@@ -147,6 +180,8 @@ public class UserController {
 
 
     }
+    
+    ///forgot reset password à faire
 
     // put user api by id ::::::::::::::
     @PutMapping("/client/{id}")
@@ -161,6 +196,9 @@ public class UserController {
 
                 }).orElseThrow(() -> new UserNotFoundException(id));
     }
+    
+    
+    
 
     //delete user api  :::::::::::::::::::::
     @DeleteMapping("/client/{id}")
