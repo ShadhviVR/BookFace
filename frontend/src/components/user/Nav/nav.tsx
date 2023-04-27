@@ -2,7 +2,13 @@ import React, { useState } from 'react';
 import Button from './Button';
 import Logo from "../../../assets/logo.png";
 
-const Nav: React.FC = () => {
+interface NavBarProps {}
+
+  const NavBar: React.FC<NavBarProps> = () => {
+    const hover: string = "hover:text-subMain transitions text-white";
+  
+    const Hover = ({ isActive }: { isActive: boolean }): string =>
+      isActive ? "text-subMain" : hover;
   
   const [] = useState(false);
 
@@ -17,4 +23,4 @@ const Nav: React.FC = () => {
   );
 };
 
-export default Nav;
+export default NavBar;
